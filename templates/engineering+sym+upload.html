@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="static\images\favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Enginnering+Students</title>
+    <link rel="stylesheet" href="static/styles-eng.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body class="body">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"href={{url_for('main')}}>
+          <img class="Care-Logo-Pic"src="https://care.ac.in/wp-content/uploads/2019/01/care-logo.png" alt="Care-Profile-Photo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a href="{{url_for('login')}}"><button type="button" class="btn btn-primary">Engineer Staff Login</button></a>
+            </li>
+          </ul>
+          </div>
+        </nav><br>
+        <br><br>
+        <br><br>
+        <section >
+          <form style="position:absolute;top:20%; left:27%;" class="name_form" action="/input_eng" method="post">
+            <div class="form-group">
+              <label for="exampleInput">Enter Your Name</label>
+              <input type="text" class="form-control" id="exampleInput" placeholder="Name" aria-describedby="emailHelp" name="stu_name" required>
+              <small id="emailHelp" class="form-text text-muted">Enter your name with your initial.</small>
+            </div><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleInput">Enter Your Register No./Roll No.</label>
+              <input type="number" class="form-control" id="exampleInput" placeholder="Register No./Roll no." aria-describedby="emailHelp" name="register_no" required>
+              <small id="emailHelp" class="form-text text-muted">If you doesn't know your register number, Then enter a roll number.</small>
+            </div><br>
+            <br>
+            <label for="exampleInput">Select Your Department</label>
+            <select class="form-control" id="exampleInput" name="dept" required>
+              <option value="">_ _Select_ _</option>
+                <option value="B.tech AI&DS">B.tech AI&DS</option>
+                <option value="B.E CSE">B.E CSE</option>
+                <option value="B.E Mechanical">B.E Mechanical</option>
+                <option value="B.E ECE">B.E ECE</option>
+                <option value="B.E Civil">B.E Civil</option>
+                <option value="M.E CSE(AI&ML)">M.E CSE(AI&ML)</option>
+                <option value="M.E Construction and Management">M.E Construction Engineering and Management</option>
+                <option value="M.E Computer Design">M.E Computer Design</option>
+                <option value="MBA">MBA</option>
+            </select><br>
+            <br>
+            <label for="exampleInput">Select The Current Studying Year</label>
+            <select class="form-control" id="exampleInput" name="cur_year" required>
+              <option value="">_ _Select_ _</option>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            </select><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleInput">Enter The College Name</label>
+              <input type="text" class="form-control" id="exampleInput" placeholder="Enter The College Name" aria-describedby="emailHelp" name="clg_name" required>
+              <small id="emailHelp" class="form-text text-muted">The college, who conducted the event.</small>
+            </div><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleInput">Enter The Event Name</label>
+              <input type="text"class="form-control" id="exampleInput" placeholder="Enter The Event Name" aria-describedby="emailHelp" name="eve_name" required>
+            </div><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleInput">Enter The Event Date</label>
+              <input type="date" class="form-control" id="exampleInput" placeholder="Enter The Event Date" aria-describedby="emailHelp" name="eve_date" required>
+            </div><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleInput">Select Your Position In The Event</label>
+              <select class="form-control" id="exampleInput" name="stu-pos_in_eve" required>
+                <option value="">_ _Select_ _</option>
+                <option value="Winner">Winner</option>
+                <option value="Runner up">Runner up</option>
+                <option value="Participation">Participation</option>
+              </select>
+            </div><br>
+            <br>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Upload Your Certificate</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*" >
+            </div><br>
+            <br>
+            <center>
+              <input class="btn btn-primary"type="submit"  value="Upload" required><br>
+            </center>
+            <br>
+            <br>
+
+          </form>
+        </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="static\images\favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENGINEERING DATA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+    .ho:hover{
+     opacity:70%;
+    }
+</style>
+<body style="background-color:#DDF7E3;">
+<nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href={{url_for('main')}}>
+        <img class="Care-Logo-Pic" src="https://care.ac.in/wp-content/uploads/2019/01/care-logo.png" alt="Care-Profile-Photo" style="width:60%;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="static/engineering/eng_data.csv"><button class="btn btn-primary">WHOLE DATA</button></a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+
+<center>
+<div class="row" style="margin:20px; margin-top:50px;">
+    <div class="col-sm-3" style="padding:20px;">
+        <a href={{url_for('B_tech_ai_ds')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://kiet-women.com/wp-content/uploads/2020/09/ai-ds-1024x700.jpg">
+            <div class="card-title">
+                <h5 style="padding:10px;">B.tech AI&DS</h5>
+            </div>
+        </div></a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('BE_cse')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://kmit.in/images/logos/cse.jpg">
+            <div class="card-title">
+                <h5 style="padding:10px;">B.E CSE</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('BE_mech')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://armiet.in/wp-content/uploads/2020/03/B1P1.jpeg">
+            <div class="card-title">
+                <h5 style="padding:10px;">B.E MECHANICAL</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('BE_ece')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-tWEKCV0sz88UJTchuxfdlQnN6xtnIvdkg&usqp=CAU">
+            <div class="card-title">
+                <h5 style="padding:10px;">B.E ECE</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('BE_civil')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://thumbs.dreamstime.com/b/civil-engineering-word-cloud-concept-grey-background-88534044.jpg">
+            <div class="card-title">
+                <h5 style="padding:10px;">B.E CIVIL</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('ME_cse_ai_ml')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://i.pinimg.com/originals/4d/1c/f3/4d1cf3d426b9c005a6a3b9e056fd54c0.jpg">
+            <div class="card-title">
+                <h5 style="padding:10px;">M.E CSE (AI&ML)</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('ME_construction_eng_manage')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6lFHOiPHOT9BhC775DeMY7316uRMcey_Lw&usqp=CAU">
+            <div class="card-title">
+                <h5 style="padding:10px;">M.E CONSTRUCTION ENGINEERING AND MANAGEMENT</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('ME_cd')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://images.unsplash.com/opengraph/1x1.png?auto=format&fit=crop&w=1200&h=630&q=60&mark-w=64&mark-align=top%2Cleft&mark-pad=50&blend-w=1&mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1605067063351-f81bc6041251%3Fcrop%3Dfaces%252Cedges%26cs%3Dtinysrgb%26fit%3Dcrop%26fm%3Djpg%26ixid%3DMnwxMjA3fDB8MXxzZWFyY2h8NHx8Y29tcHV0ZXIlMjBkZXNpZ258ZW58MHx8fHwxNjc5MTg0NDQ1%26ixlib%3Drb-4.0.3%26q%3D60%26w%3D1200%26auto%3Dformat%26h%3D630%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fauto%253Dformat%2526fit%253Dcrop%2526w%253D750%2526h%253D84%2526q%253D60%2526txt-color%253D000000%2526txt-size%253D40%2526txt-align%253Dmiddle%25252Cleft%2526txt-pad%253D80%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526txt%253Dcomputer%252520design%26blend%3D000000">
+            <div class="card-title">
+                <h5 style="padding:10px;">M.E COMPUTER DESIGN</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+    <div class="col-sm-3"  style="padding:20px;">
+        <a href={{url_for('MBA')}} style="color:black;text-decoration:none;">
+        <div class="card ho">
+            <img class="card-top-image" src="https://www.capital.fr/imgre/fit/https.3A.2F.2Fi.2Epmdstatic.2Enet.2Fcap.2F2022.2F12.2F07.2Fe9c98c59-f68b-4a84-9acc-49fa5419b96c.2Ejpeg/790x395/background-color/ffffff/quality/70/mba-comment-reussir-a-convaincre-votre-employeur-de-vous-financer-cette-formation-d-excellence.jpg">
+            <div class="card-title">
+                <h5 style="padding:10px;">MBA</h5>
+            </div>
+        </div>
+            </a>
+    </div>
+</div>
+
+</center>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

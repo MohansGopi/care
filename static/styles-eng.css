@@ -1,0 +1,23 @@
+/* tage selector */
+
+
+
+
+
+
+
+/* class selector */
+
+.Care-Logo-Pic{
+  width: 170px;
+  height: auto;
+}
+.name_form{
+  width: 50%;
+  position: relative;
+  left: 30%;
+}
+.sumit_btn{
+  width: 30%;
+  background-color: blue;
+}
